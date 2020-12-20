@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -r 30 -f image2 -s 480x270 -i output/%04d.tif -vcodec libx264 -crf 25  -pix_fmt yuv420p output/output.mp4
